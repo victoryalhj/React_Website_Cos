@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,21 +8,33 @@ import ProductAll from './page/ProductAll'
 import Login from './page/Login'
 import ProductDetail from './page/ProductDetail'
 import Navbar from './component/Navbar'
+import PrivateRoutes from './route/PrivateRoutes';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [authenticate,setAuthenticate] = useState(false)
+
+  useEffect(()=>{
+    console.log('aaa',authenticate)
+  },[authenticate])
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<ProductAll/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/product/:id" element={<ProductDetail/>}/>
+        <Route path="/" element={<ProductAll />} />
+        <Route
+          path="/login"
+          element={<Login setAuthenticate={setAuthenticate} />}
+        />
+        <Route
+          path="/product/:id"
+          element={<PrivateRoutes authenticate={authenticate} />
+        }
+        />
       </Routes>
     </div>
-  )
+  );
 }
 
 

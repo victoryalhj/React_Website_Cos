@@ -19,7 +19,6 @@
 }
 .login-box-size {
   width: 500px !important;
-  background-color: rgb(55, 55, 54);
 }
 
 
@@ -64,4 +63,30 @@
 }
 .product-card-area div{
   margin:0.5rem;
+}
+
+
+@media screen and (max-width:430px) {
+  .form-area, .nav-section, .menu-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    font-size: 10px;
+  }
+  .login-button {
+    font-size: 12px;
+    font-weight: 900;
+  }
+  .search-area {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .product-card-area {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
