@@ -1,13 +1,13 @@
 import React from 'react'
 
-const ProductCard = () => {
+const ProductCard = ({item}) => {
   return (
-    <div>
-      <img src="/img/jacket1.jpg" alt="" />
-      <div>Conscious choice</div>
-      <div>Coat</div>
-      <div>175</div>
-      <div>NEW</div>
+    <div className='product-card-area'>
+      <img src={item?.img} alt="" />
+      <div>{item?.choice==true?"Conscious choice":""}</div>
+      <div>{item?.title}</div>
+      <div>{item?.price}</div>
+      <div>{item?.new==true?"NEW":""}</div>
     </div>
   )
 }

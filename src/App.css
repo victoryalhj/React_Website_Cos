@@ -1,25 +1,47 @@
+/* Login */
 .login-button {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+  cursor: pointer;
 }
+.user-icon {
+  display: flex;
+  margin: auto 0;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.login-box-size {
+  width: 500px !important;
+  background-color: rgb(55, 55, 54);
+}
+
 
 .nav-section {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .menu-area {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .menu-list {
   display: flex;
   list-style-type: none;
+  margin: 0;
 }
 .menu-list li{
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .search-area {
@@ -28,4 +50,18 @@
 }
 .search-area input {
   border: none;
+}
+
+/* Product card */
+.product-card-area img{
+  width: 300px;
+  height: 450px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.product-card-area img:hover{
+  transform: scale(1.05);
+}
+.product-card-area div{
+  margin:0.5rem;
 }
