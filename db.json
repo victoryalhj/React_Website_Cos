@@ -2,7 +2,7 @@
   "products":[
     {
       "id":0,
-      "img":"/img/coat2.jpg",
+      "img":"https://media.cos.com/assets/001/bd/50/bd501a8ec8ba88a0a4e359d93c76de2abe893045_xxl-1.jpg?imwidth=396",
       "title":"OVERSIZED DOUBLE-BREASTED WOOL LONG COAT",
       "price":"£269",
       "choice":true,
@@ -11,7 +11,7 @@
     },
     {
       "id":1,
-      "img":"/img/jeans1.jpg",
+      "img":"https://media.cos.com/assets/001/b8/21/b821fae86cebb7b53f23ad35f599d022bac5cc56_xxl-1.jpg?imwidth=396",
       "title":"REPRISE STRAIGHT-LEG JEANS",
       "price":"£85",
       "choice":true,
