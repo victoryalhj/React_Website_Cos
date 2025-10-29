@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom'
 
 const ProductCard = ({item}) => {
   const navigate = useNavigate()
+
+  if (!item) return null
+  
   const showDetail= ()=>{
     navigate(`/product/${item.id}`)
   }
