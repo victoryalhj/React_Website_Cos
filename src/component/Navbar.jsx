@@ -13,6 +13,12 @@ const Navbar = () => {
   const goToLogin = ()=>{
     navigate('/login')
   }
+  const search = (event)=>{
+    if(event.key === "Enter") {
+      let keyword = event.target.value
+      navigate(`/?q=${keyword}`)
+    }
+  }
 
   return (
     <div>
@@ -23,7 +29,9 @@ const Navbar = () => {
         </div>
 
         <div className='nav-section'>
-          <img width={100} src="https://media.gq-magazine.co.uk/photos/66e16e9d5bad7926f0288dfc/master/w_1600%2Cc_limit/COS_Logo.png" alt="" />
+          <a href="/">
+            <img width={100} src="https://media.gq-magazine.co.uk/photos/66e16e9d5bad7926f0288dfc/master/w_1600%2Cc_limit/COS_Logo.png" alt="" />
+          </a>
         </div>
 
         <div className='menu-area'>
@@ -32,7 +40,7 @@ const Navbar = () => {
           </ul>
           <div className='search-area'>
             <FontAwesomeIcon icon={faSearch}/>
-            <input type="text" placeholder='Search Product'/>
+            <input type="text" onKeyPress={(event)=>search(event)} placeholder='Search Product'/>
           </div>
         </div>
 
