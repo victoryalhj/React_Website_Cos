@@ -50,7 +50,10 @@
   cursor: pointer;
   font-size: 1em;
   font-weight: 900;
+  background-color: #f8f9fa;
+  color: black;
 }
+
 
 .nav-section {
   display: flex;
@@ -146,6 +149,8 @@
     flex-direction: column;
     font-size: 12px;
     cursor: pointer;
+    background-color: #f8f9fa;
+    color: black;
   }
 
   .form-area, .nav-section, .menu-area {
